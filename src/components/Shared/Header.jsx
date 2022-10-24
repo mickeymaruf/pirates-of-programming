@@ -3,16 +3,17 @@ import title from '../../assets/images/title.png';
 import logo from '../../assets/images/logo.png';
 import avatar from '../../assets/images/avatar.png';
 import { Switch, Tooltip } from "@material-tailwind/react";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <header>
             <nav className='flex items-center justify-between py-5'>
-                <div className='flex items-center gap-1'>
+                <Link to="/" className='flex items-center gap-1'>
                     <img className='w-10 h-10' src={logo} alt="" />
                     <img className='w-32' src={title} alt="" />
-                </div>
-                <ul className='flex items-center gap-3'>
+                </Link>
+                <ul className='flex items-center gap-5'>
                     <li>Courses</li>
                     <li>FAQ</li>
                     <li>Blog</li>
@@ -24,7 +25,9 @@ const Header = () => {
                             <img className='w-10' src={avatar} alt="" />
                         </Tooltip>
                     </li>
-                    <li><button className='bg-indigo-600 px-6 py-3 text-white font-medium rounded-lg'>Login</button></li>
+                    <li>
+                        <Link to="/login"><button className='btn-theme'>Login</button></Link>
+                    </li>
                 </ul>
             </nav>
         </header>

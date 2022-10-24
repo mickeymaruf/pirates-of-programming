@@ -1,11 +1,9 @@
-import Header from "./components/Shared/Header";
-
+import { RouterProvider } from 'react-router-dom';
+import routes from './routes/routes';
 
 function App() {
   return (
-    <div className="w-10/12 mx-auto">
-      <Header />
-    </div>
+    <RouterProvider router={routes}></RouterProvider>
   );
 }
 
