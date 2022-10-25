@@ -6,9 +6,15 @@ import { Switch, Tooltip } from "@material-tailwind/react";
 import { Link } from 'react-router-dom';
 import { BiSun } from 'react-icons/bi';
 import { BsMoonStars } from 'react-icons/bs';
+import { useAuth } from '../../contexts/AuthProvider';
 
 const Header = () => {
     const [theme, setTheme] = useState(false);
+    const { user, logOut } = useAuth();
+    const handleLogout = () => {
+        logOut()
+            .then(() => { }).catch(error => console.log(error));
+    }
     return (
         <header>
             <nav className='flex items-center justify-between py-5'>
@@ -23,14 +29,23 @@ const Header = () => {
                     <li>
                         <Switch onClick={() => setTheme(!theme)} color="indigo" label={theme ? <BiSun className='w-5 h-5' /> : <BsMoonStars className='w-5 h-5' />} />
                     </li>
-                    <li>
-                        <Tooltip content="User Name">
-                            <img className='w-10' src={avatar} alt="" />
-                        </Tooltip>
-                    </li>
-                    <li>
-                        <Link to="/login"><button className='btn-theme'>Login</button></Link>
-                    </li>
+                    {
+                        user && user.uid ?
+                            <>
+                                <li>
+                                    <Tooltip content={user.displayName || "User Name"}>
+                                        <img className='w-10' src={avatar} alt="" />
+                                    </Tooltip>
+                                </li>
+                                <li>
+                                    <button onClick={handleLogout} className='btn-theme'>Logout</button>
+                                </li>
+                            </>
+                            :
+                            <li>
+                                <Link to="/login"><button className='btn-theme'>Login</button></Link>
+                            </li>
+                    }
                 </ul>
             </nav>
         </header>
