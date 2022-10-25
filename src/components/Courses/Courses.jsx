@@ -1,6 +1,5 @@
 import React from 'react';
-import { BsChevronRight } from 'react-icons/bs';
-import { Link, useLoaderData } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 import Course from './Course';
 
 const Courses = () => {

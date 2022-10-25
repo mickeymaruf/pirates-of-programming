@@ -36,7 +36,7 @@ const Header = () => {
                                     <Tooltip content={user.displayName || "User Name"}>
                                         {
                                             user.photoURL ?
-                                            <img className='w-10 rounded-full' src={user.photoURL} alt="" />
+                                            <img className='w-10 h-10 rounded-full border' src={user.photoURL} alt="" />
                                             :
                                             <img className='w-10 rounded-full' src={avatar} alt="" />
                                         }
