@@ -14,7 +14,7 @@ const Signup = () => {
         const photoURL = e.target.photoURL.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        if (!email || !password) {
+        if (!name || !email || !password) {
             toast.error("Field can't be empty!")
             return;
         }

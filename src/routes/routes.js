@@ -1,12 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Login from '../components/Auth/Login';
 import Signup from '../components/Auth/Signup';
+import Checkout from '../components/Checkout/Checkout';
 import CourseDetails from '../components/Courses/CourseDetails';
 import CourseLayout from '../components/Courses/CourseLayout';
 import Courses from '../components/Courses/Courses';
 import Home from '../components/Home/Home';
 import ErrorPage from '../components/Others/ErrorPage';
 import Root from '../layouts/Root';
+import RequireAuth from './RequireAuth';
 
 const routes = createBrowserRouter([
     {
@@ -25,21 +27,25 @@ const routes = createBrowserRouter([
             },
             {
                 path: 'courses',
-                loader: () => fetch('http://localhost:5000/courses'),
+                loader: () => fetch('https://pirates-of-programming-server-mickeymaruf.vercel.app/courses'),
                 element: <CourseLayout />, 
                 children: [
                     {
                         path: '/courses',
-                        loader: () => fetch('http://localhost:5000/courses'),
+                        loader: () => fetch('https://pirates-of-programming-server-mickeymaruf.vercel.app/courses'),
                         element: <Courses />
                     },
                     {
                         path: 'course/:id',
-                        loader: ({ params }) => fetch(`http://localhost:5000/course/${params.id}`),
+                        loader: ({ params }) => fetch(`https://pirates-of-programming-server-mickeymaruf.vercel.app/course/${params.id}`),
                         element: <CourseDetails />
                     },
                 ]
             },
+            {
+                path: 'checkout',
+                element: <RequireAuth><Checkout /></RequireAuth>
+            }
         ], errorElement: <ErrorPage />
     }
 ])

@@ -1,19 +1,27 @@
 import { Input } from '@material-tailwind/react';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthProvider';
 import SocialAuth from './SocialAuth';
 import toast from 'react-hot-toast';
 
 const Login = () => {
+    const navigate = useNavigate();
     const { login } = useAuth();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
+        if (!email || !password) {
+            toast.error("Field can't be empty!")
+            return;
+        }
         login(email, password)
             .then(result => {
-                console.log(result);
+                navigate(from, { replace: true });
             })
             .catch(error => {
                 toast.error(error.message);
