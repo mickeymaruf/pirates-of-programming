@@ -1,12 +1,13 @@
 import { Input } from '@material-tailwind/react';
 import React from 'react';
 import toast from 'react-hot-toast';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthProvider';
 import SocialAuth from './SocialAuth';
 
 const Signup = () => {
-    const { createUser, updateUser } = useAuth();
+    const { createUser, updateUser, verifyEmail } = useAuth();
+    const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
         const name = e.target.name.value;
@@ -20,8 +21,13 @@ const Signup = () => {
         createUser(email, password)
             .then(result => {
                 updateUser(name, photoURL)
-                    .then(() => { }).catch((error) => console.log(error));
-                toast("A verification mail has been sent! verify to login.", { icon: '👏', })
+                    .then(() => { }).catch(error => console.log(error));
+                verifyEmail()
+                    .then(() => {
+                        toast("A verification mail has been sent! verify to login.", { icon: '👏', })
+                        navigate("/login");
+                    })
+                    .catch(error => console.log(error));
             })
             .catch(error => {
                 toast.error(error.message);
