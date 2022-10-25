@@ -1,0 +1,92 @@
+[
+    {
+        "id": "5ed3b13f-be88-4a9b-86ee-c4a4c5dafaf1",
+        "name": "Python for Beginner",
+        "thumbnail": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210215160315/FREE-Python-Course-For-Beginners.png",
+        "description": "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.",
+        "category": "08",
+        "authority": "University of Dakoda",
+        "benifits": "Computer Programming, Python Programming, Statistical Programming, Data Management, SQL, Databases, Extract, Transform, Load, Computer Networking, Network Model, Other Programming Languages, Computational Logic, Computer Programming Tools, Data Structures, Javascript, Natural Language Processing, Programming Principles, Software Architecture, Software Engineering, Theoretical Computer Science, Web Development",
+        "preRequirements": "A computer with a stable internet connection. Need basic knowledge of using computer",
+        "ratings": 4.4,
+        "reviews": 188.3,
+        "duration": "3-6 months",
+        "level": "Beginner"
+    },
+    {
+        "id": "c46615e8-d229-4937-981f-b5487922d6b0",
+        "name": "C++ Programming",
+        "thumbnail": "https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1551437392/img/co_img_1539_1633434090.png",
+        "description": "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.",
+        "category": "08",
+        "authority": "University of Dakoda",
+        "benifits": "C Programming Language Family, Computer Programming, C++ Programming, Computer Science, Data Structures, Theoretical Computer Science, Graph Theory, Mathematics, Other Programming Languages, Programming Principles",
+        "preRequirements": "A computer with a stable internet connection. Need basic knowledge of using computer",
+        "ratings": 4.8,
+        "reviews": 255.2,
+        "duration": "8-12 months",
+        "level": "Advance"
+    },
+    {
+        "id": "b5655d17-2bbf-465f-b3d4-7817d1731087",
+        "name": "Learn Flutter",
+        "thumbnail": "https://www.tangolearn.com/wp-content/uploads/2022/03/how-to-learn-flutter.jpg",
+        "description": "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.",
+        "category": "08",
+        "authority": "University of Dakoda",
+        "benifits": "Mobile Development, Network Security, Web Development",
+        "preRequirements": "A computer with a stable internet connection. Need basic knowledge of using computer",
+        "ratings": 4.1,
+        "reviews": 72,
+        "duration": "3-6 months",
+        "level": "Beginner"
+    },
+    {
+        "id": "3c562edf-0894-4918-ab77-b53b3845d64d",
+        "name": "C# for Unity",
+        "thumbnail": "https://static.skillshare.com/uploads/discussion/tmp/b8ba300b.png",
+        "description": "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.",
+        "category": "08",
+        "authority": "University of Dakoda",
+        "benifits": "Computer Programming, Other Programming Languages, C Programming Language Family, Software Engineering, Software Engineering Tools, Computer Graphics, Entrepreneurship, Interactive Design, Leadership and Management, Problem Solving, Research and Design, Applied Mathematics, FinTech, Finance, Linear Algebra, Mathematics, Programming Principles, Visual Design",
+        "preRequirements": "A computer with a stable internet connection. Need basic knowledge of using computer",
+        "ratings": 3.8,
+        "reviews": 1.4,
+        "duration": "5-6 months",
+        "level": "Beginner"
+    },
+    {
+        "id": "2ea82898-2e61-4a67-b1e7-362804438f1c",
+        "name": "Node.js",
+        "thumbnail": "https://miro.medium.com/max/1400/1*xdo0UBpyszvD7-7EH4TkIA.png",
+        "description": "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.",
+        "category": "08",
+        "authority": "University of Dakoda",
+        "benifits": "Back-End Web Development, Computer Architecture, Databases, Distributed Computing Architecture, NoSQL, Web Development, Javascript",
+        "preRequirements": "A computer with a stable internet connection. Need basic knowledge of using computer",
+        "ratings": 3.8,
+        "reviews": 18,
+        "duration": "2-3 months",
+        "level": "Intermediate"
+    },
+    {
+        "id": "7f901fd2-3cfe-4eaa-9e9a-470e2a86b1ec",
+        "name": "Programming in Go",
+        "thumbnail": "https://miro.medium.com/max/1400/1*Ifpd_HtDiK9u6h68SZgNuA.png",
+        "description": "Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.",
+        "category": "08",
+        "authority": "University of Dakoda",
+        "benifits": "Other Programming Languages, Computational Thinking, Computer Programming, Theoretical Computer Science, Operating Systems, Software Architecture, Software Engineering, Software Testing, Systems Design",
+        "preRequirements": "A computer with a stable internet connection. Need basic knowledge of using computer",
+        "ratings": 3.5,
+        "reviews": 2,
+        "duration": "2-3 months",
+        "level": "Basic"
+    }
+]
+
+
+
+
+
+
