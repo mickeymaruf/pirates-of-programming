@@ -8,11 +8,7 @@ app.use(cors())
 const courses = require('./data/courses.json')
 
 app.get('/', (req, res)=>{
-    res.send("Welcome")
-})
-
-app.get('/courses', (req, res)=>{
-    res.send(courses)
+    res.send("Welcome to the server of Pirates of Programming.🥳")
 })
 
 app.listen(port, ()=>{
