@@ -15,6 +15,7 @@ const Login = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
+        // checking input fields are empty or not
         if (!email || !password) {
             toast.error("Field can't be empty!")
             return;
@@ -39,9 +40,9 @@ const Login = () => {
                 </div>
                 <div className='mb-8'>
                     <Input type="password" name="password" variant="standard" label="Password" />
-                    <p onClick={handleForgotPassword} className='mt-3 font-medium text-yellow-900 text-sm'>Forgot Password</p>
+                    <p onClick={handleForgotPassword} className='mt-3 font-medium text-yellow-900 text-sm cursor-pointer'>Forgot Password</p>
                 </div>
-                <button className='btn-theme mb-5' type="submit">Login</button>
+                <button className='btn-theme w-full mb-5' type="submit">Login</button>
                 <p className='text-center'>Don't have an account? <Link to="/signup" className='text-yellow-900 font-medium underline'>Create an account</Link></p>
             </form>
             <SocialAuth />

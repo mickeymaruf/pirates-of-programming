@@ -14,6 +14,7 @@ const Signup = () => {
         const photoURL = e.target.photoURL.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
+        // checking input fields are empty or not
         if (!name || !email || !password) {
             toast.error("Field can't be empty!")
             return;
@@ -49,7 +50,7 @@ const Signup = () => {
                 <div className='mb-8'>
                     <Input type="password" name="password" variant="standard" label="Password" />
                 </div>
-                <button className='btn-theme mb-5' type="submit">Sign Up</button>
+                <button className='btn-theme w-full mb-5' type="submit">Sign Up</button>
                 <p className='text-center'>Already have an account? <Link to="/login" className='text-yellow-900 font-medium underline'>Login</Link></p>
             </form>
             <SocialAuth />

@@ -29,9 +29,9 @@ const Header = () => {
                     <img className='w-28' src={title} alt="" />
                 </Link>
                 <ul className={`flex flex-col md:flex-row bg-gray-200 md:bg-transparent items-center gap-5 absolute md:static ${toggle ? "top-20" : "-top-96"} left-0 w-full md:w-fit py-5 md:py-0 duration-300 z-10`}>
-                    <li onClick={closeMenu}><Link to="/courses">Courses</Link></li>
-                    <li onClick={closeMenu}>FAQ</li>
-                    <li onClick={closeMenu}>
+                    <li className='hover:text-indigo-500' onClick={closeMenu}><Link to="/courses">Courses</Link></li>
+                    <li className='hover:text-indigo-500' onClick={closeMenu}>FAQ</li>
+                    <li className='hover:text-indigo-500' onClick={closeMenu}>
                         <Link to="/blog">Blog</Link>
                     </li>
                     <li>
