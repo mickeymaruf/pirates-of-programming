@@ -6,6 +6,7 @@ import CourseDetails from '../components/Courses/CourseDetails';
 import CourseLayout from '../components/Courses/CourseLayout';
 import Courses from '../components/Courses/Courses';
 import Home from '../components/Home/Home';
+import Blog from '../components/Others/Blog';
 import ErrorPage from '../components/Others/ErrorPage';
 import Root from '../layouts/Root';
 import RequireAuth from './RequireAuth';
@@ -46,6 +47,10 @@ const routes = createBrowserRouter([
                 path: 'checkout/:id',
                 loader: ({ params }) => fetch(`https://pirates-of-programming-server-mickeymaruf.vercel.app/course/${params.id}`),
                 element: <RequireAuth><Checkout /></RequireAuth>
+            },
+            {
+                path: 'blog',
+                element: <Blog />
             }
         ], errorElement: <ErrorPage />
     }

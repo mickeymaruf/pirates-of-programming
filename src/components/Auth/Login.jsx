@@ -27,6 +27,9 @@ const Login = () => {
                 toast.error(error.message);
             })
     }
+    const handleForgotPassword = () => {
+        // toast()
+    }
     return (
         <div className='md:w-9/12 lg:w-7/12 xl:w-6/12 mx-auto'>
             <form onSubmit={handleSubmit} className='mt-10 md:mt-20 border border-gray-400 rounded-md p-10'>
@@ -36,7 +39,7 @@ const Login = () => {
                 </div>
                 <div className='mb-8'>
                     <Input type="password" name="password" variant="standard" label="Password" />
-                    <p className='mt-3 font-medium text-yellow-900 text-sm'>Forgot Password</p>
+                    <p onClick={handleForgotPassword} className='mt-3 font-medium text-yellow-900 text-sm'>Forgot Password</p>
                 </div>
                 <button className='btn-theme mb-5' type="submit">Login</button>
                 <p className='text-center'>Don't have an account? <Link to="/signup" className='text-yellow-900 font-medium underline'>Create an account</Link></p>

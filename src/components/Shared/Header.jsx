@@ -31,7 +31,9 @@ const Header = () => {
                 <ul className={`flex flex-col md:flex-row bg-gray-200 md:bg-transparent items-center gap-5 absolute md:static ${toggle ? "top-20" : "-top-96"} left-0 w-full md:w-fit py-5 md:py-0 duration-300 z-10`}>
                     <li onClick={closeMenu}><Link to="/courses">Courses</Link></li>
                     <li onClick={closeMenu}>FAQ</li>
-                    <li onClick={closeMenu}>Blog</li>
+                    <li onClick={closeMenu}>
+                        <Link to="/blog">Blog</Link>
+                    </li>
                     <li>
                         <Switch onClick={() => setTheme(!theme)} color="indigo" label={theme ? <BiSun className='w-5 h-5' /> : <BsMoonStars className='w-5 h-5' />} />
                     </li>
