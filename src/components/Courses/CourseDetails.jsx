@@ -10,7 +10,7 @@ const CourseDetails = () => {
     const { id, name, thumbnail, description, benifits, rating, reviews, level, duration, preRequisites } = course;
     const benifitsList = benifits.split(", ");
     return (
-        <div className='col-span-9 border mb-10'>
+        <div className='col-span-12 lg:col-span-8 xl:col-sapn-9 border lg:mb-10'>
             <Link to={`/checkout/${id}`}>
                 <button className='bg-green-700 px-6 py-2 text-white font-medium rounded-lg m-3 mb-0'>Get premium access</button>
             </Link>

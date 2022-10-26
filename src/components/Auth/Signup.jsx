@@ -34,8 +34,8 @@ const Signup = () => {
             })
     }
     return (
-        <div className='w-6/12 mx-auto'>
-            <form onSubmit={handleSubmit} className='mt-20 border border-gray-400 rounded-md p-10'>
+        <div className='md:w-9/12 lg:w-7/12 xl:w-6/12 mx-auto'>
+            <form onSubmit={handleSubmit} className='mt-10 md:mt-20 border border-gray-400 rounded-md p-10'>
                 <h3 className='text-3xl font-medium mb-10'>Sign Up</h3>
                 <div className='mb-7'>
                     <Input type="text" name="name" variant="standard" label="Full name" />
