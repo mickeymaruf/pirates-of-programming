@@ -7,11 +7,11 @@ import Pdf from "react-to-pdf";
 const CourseDetails = () => {
     const ref = createRef();
     const course = useLoaderData();
-    const { name, thumbnail, description, benifits, rating, reviews, level, duration, preRequisites } = course;
+    const { id, name, thumbnail, description, benifits, rating, reviews, level, duration, preRequisites } = course;
     const benifitsList = benifits.split(", ");
     return (
         <div className='col-span-9 border mb-10'>
-            <Link>
+            <Link to={`/checkout/${id}`}>
                 <button className='bg-green-700 px-6 py-2 text-white font-medium rounded-lg m-3 mb-0'>Get premium access</button>
             </Link>
             <div className='flex items-center gap-3 m-3 mt-2'>

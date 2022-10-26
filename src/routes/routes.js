@@ -43,7 +43,8 @@ const routes = createBrowserRouter([
                 ]
             },
             {
-                path: 'checkout',
+                path: 'checkout/:id',
+                loader: ({ params }) => fetch(`https://pirates-of-programming-server-mickeymaruf.vercel.app/course/${params.id}`),
                 element: <RequireAuth><Checkout /></RequireAuth>
             }
         ], errorElement: <ErrorPage />
