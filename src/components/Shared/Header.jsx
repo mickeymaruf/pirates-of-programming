@@ -44,9 +44,9 @@ const Header = () => {
                                     <Tooltip content={user.displayName || "User Name"}>
                                         {
                                             user.photoURL ?
-                                                <img className='w-10 h-10 rounded-full border' src={user.photoURL} alt="" />
+                                                <Link to='/profile'><img className='w-10 h-10 rounded-full border' src={user.photoURL} alt="" /></Link>
                                                 :
-                                                <img className='w-10 rounded-full' src={avatar} alt="" />
+                                                <Link to='/profile'><img className='w-10 rounded-full' src={avatar} alt="" /></Link>
                                         }
                                     </Tooltip>
                                 </li>
@@ -63,9 +63,9 @@ const Header = () => {
                 <button className='md:hidden bg-gray-200 p-2 z-20' onClick={() => setToggle(!toggle)}>
                     {
                         toggle ?
-                        <GrClose className='w-8 h-8' />
-                        :
-                        <HiOutlineBars3 className='w-8 h-8' />
+                            <GrClose className='w-8 h-8' />
+                            :
+                            <HiOutlineBars3 className='w-8 h-8' />
                     }
                 </button>
             </nav>

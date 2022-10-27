@@ -8,6 +8,7 @@ import Courses from '../components/Courses/Courses';
 import Home from '../components/Home/Home';
 import Blog from '../components/Others/Blog';
 import ErrorPage from '../components/Others/ErrorPage';
+import Profile from '../components/User/Profile';
 import Root from '../layouts/Root';
 import RequireAuth from './RequireAuth';
 
@@ -29,7 +30,7 @@ const routes = createBrowserRouter([
             {
                 path: 'courses',
                 loader: () => fetch('https://pirates-of-programming-server-mickeymaruf.vercel.app/courses'),
-                element: <CourseLayout />, 
+                element: <CourseLayout />,
                 children: [
                     {
                         path: '/courses',
@@ -51,6 +52,10 @@ const routes = createBrowserRouter([
             {
                 path: 'blog',
                 element: <Blog />
+            },
+            {
+                path: 'profile',
+                element: <RequireAuth><Profile /></RequireAuth>
             }
         ], errorElement: <ErrorPage />
     }
