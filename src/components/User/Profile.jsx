@@ -18,15 +18,14 @@ const Profile = () => {
                 toast.error(error.message);
             });
     }
-    console.log(user);
     return (
-        <div className='w-[90%] mx-auto grid grid-cols-5 gap-12 my-16'>
-            <div className='col-span-2 self-start flex p-5 gap-4 rounded-lg border border-gray-400'>
-                <div className='flex items-center gap-2'>
+        <div className='xl:w-[90%] mx-auto lg:grid grid-cols-5 gap-12 my-16'>
+            <div className='col-span-2 mb-5 xl:mb-0 self-start p-5 gap-4 rounded-lg border border-gray-400'>
+                <div className='flex flex-col 2xl:flex-row items-center text-center 2xl:text-left gap-2 2xl:gap-4'>
                     <div className='relative w-20'>
                         {
                             photoURL ?
-                                <img className='rounded-full' src={photoURL} alt="" />
+                                <img className='rounded-full w-20' src={photoURL} alt="" />
                                 :
                                 <div className='bg-slate-900 w-20 h-20 rounded-full'></div>
                         }
@@ -39,7 +38,6 @@ const Profile = () => {
                         <p className='text-sm'>Id: {uid}</p>
                     </div>
                 </div>
-
             </div>
             <div className='col-span-3'>
                 <form onSubmit={handleSubmit} className='border border-gray-400 rounded-md p-10'>
