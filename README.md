@@ -10,7 +10,7 @@ Live Site: [https://pirates-of-programming.web.app/](https://pirates-of-programm
 - **Get premium access** is a protected route to access which you need to login first and after authenticated user will get redirected to that checkout page automatically.
 - **User Profile:** You can update the user info in this section.
 
-> Technologies that have used to make this application :
+> Technologies that have been used to make this application :
 - **Frontend:** React, React Router, Tailwindcss
 - **Backend:** Express JS
 - **Authentication:** Firebase
