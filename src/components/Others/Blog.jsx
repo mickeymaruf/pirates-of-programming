@@ -14,7 +14,7 @@ const Blog = () => {
                 <div className='relative hover:bg-gray-100 p-5 rounded-lg mb-5 duration-100 font-theme'>
                     <div className='w-2 h-2 bg-indigo-500 rounded-full absolute -left-[41px] -translate-x-1/2 top-1/2'></div>
                     <div className='hidden md:block absolute -left-24 -translate-x-1/2 top-1/2 -translate-y-1/2 mt-1'>
-                        19 Dec, 2022
+                        26 Oct, 2022
                     </div>
                     <h4 className='text-lg font-bold mb-2'>What is cors?</h4>
                     <p>
@@ -24,21 +24,19 @@ const Blog = () => {
                 <div className='relative hover:bg-gray-100 p-5 rounded-lg mb-5 duration-100 font-theme'>
                     <div className='w-2 h-2 bg-indigo-500 rounded-full absolute -left-[41px] -translate-x-1/2 top-1/2'></div>
                     <div className='hidden md:block absolute -left-24 -translate-x-1/2 top-1/2 -translate-y-1/2 mt-1'>
-                        19 Dec, 2022
+                        26 Oct, 2022
                     </div>
                     <h4 className='text-lg font-bold mb-2'>Why are you using firebase? What other options do you have to implement authentication?</h4>
                     <p>
                         Firebase is great for quick projects. It's easy to set up, fast, in many cases requires only front-end logic. It lets us focus on our app instead of implementing custom authentication, web sockets or database connections. <br />
-                        Alternatives of firebase:
-                        <p className='font-medium'>
-                            Redis, Parse, AWS Amplify, Azure, MongoDB
-                        </p>
+                        Alternatives of firebase:<br />
+                        Redis, Parse, AWS Amplify, Azure, MongoDB
                     </p>
                 </div>
                 <div className='relative hover:bg-gray-100 p-5 rounded-lg mb-5 duration-100 font-theme'>
                     <div className='w-2 h-2 bg-indigo-500 rounded-full absolute -left-[41px] -translate-x-1/2 top-1/2'></div>
                     <div className='hidden md:block absolute -left-24 -translate-x-1/2 top-1/2 -translate-y-1/2 mt-1'>
-                        19 Dec, 2022
+                        26 Oct, 2022
                     </div>
                     <h4 className='text-lg font-bold mb-2'>How does the private route work?</h4>
                     <p>
@@ -48,7 +46,7 @@ const Blog = () => {
                 <div className='relative hover:bg-gray-100 p-5 rounded-lg mb-10 duration-100 font-theme'>
                     <div className='w-2 h-2 bg-indigo-500 rounded-full absolute -left-[41px] -translate-x-1/2 top-1/2'></div>
                     <div className='hidden md:block absolute -left-24 -translate-x-1/2 top-1/2 -translate-y-1/2 mt-1'>
-                        19 Dec, 2022
+                        26 Oct, 2022
                     </div>
                     <h4 className='text-lg font-bold mb-2'>What is Node? How does Node work?</h4>
                     <p>
