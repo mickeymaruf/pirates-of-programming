@@ -23,9 +23,6 @@ const Footer = () => {
                             <li className='hover:underline mb-4'>
                                 Material Tailwind
                             </li>
-                            <li className='hover:underline mb-4'>
-                                Flowbite
-                            </li>
                         </ul>
                     </div>
                     <div>

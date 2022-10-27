@@ -8,6 +8,7 @@ import benifitImg3 from '../../assets/images/benifit3.png';
 import { AiOutlineLineChart, AiOutlineProject } from 'react-icons/ai';
 import { BiDumbbell } from 'react-icons/bi';
 import { TbCertificate } from 'react-icons/tb';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -195,7 +196,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className='flex-1 flex mt-8 justify-center gap-5'>
-                    <button className='px-6 py-3 bg-indigo-500 text-white shadow-xl font-medium rounded-full flex items-center gap-2 uppercase'>Create Account <BsFillPlayFill className='h-3 w-3' /></button>
+                    <Link to="/signup"><button className='px-6 py-3 bg-indigo-500 text-white shadow-xl font-medium rounded-full flex items-center gap-2 uppercase'>Create Account <BsFillPlayFill className='h-3 w-3' /></button></Link>
                     <button className='border px-6 py-3 text-indigo-500 hover:bg-gray-200 shadow-xl font-medium rounded-full flex items-center gap-2'>Contact Us <BsFillPlayFill className='h-4 w-4' /></button>
                 </div>
             </div>
